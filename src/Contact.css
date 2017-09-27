@@ -1,0 +1,33 @@
+#contactDescription{
+	padding-top: 10%;
+}
+#contactInfo{
+	padding-top: 25%;
+	padding-left: 5%;
+}
+
+@media (max-width:990px){
+   #contactInfo{
+		padding-top: 25%;
+		padding-left: 15%;
+	}
+}
+@media (max-width:770px){
+   #contactInfo{
+		padding-top: 0%;
+		padding-left: 3%;
+	}
+}
+@media (max-height:750px){
+   #contactDescription{
+		margin-top: 5%;
+	}
+	#contactDescription{
+		padding-top: 4%;
+	}
+}
+@media (max-width:400px){
+	#contactContain{
+		padding-top: 15%;
+	}
+}

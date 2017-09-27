@@ -1,0 +1,201 @@
+@import'fonts/Orator.css';
+
+#Home{
+  background: url(visual assets/background/peter-nguyen-128493.jpg)no-repeat center center fixed;
+  color: white;
+  height: 100vh;
+}
+#homepage{
+  text-align: center;
+}
+.logoName{
+  font-family: 'Megrim', cursive;
+  font-size: 96px;
+}
+.logoTag{
+  font-family: 'Megrim', cursive;
+  font-size: 48px;
+  display: inline-block;
+  padding: 0px 5px 0px 5px;
+}
+
+/*NavBar*/
+#landingNav {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  border-width: 2px;
+  border-style: solid;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  margin-bottom: 7%;
+  padding-top: 2%;
+}
+#landingNav ul{
+  list-style-type: none;
+  margin-bottom: 1%;
+  padding-top: 2%;
+}
+
+#landingNav li {
+  font-size: 25px;
+  display: inline-block;
+  padding: 0px 10px 0px 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: Orator;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#pointer{
+  padding-top: 4%;
+}
+#pointer a{
+  color: white;
+  text-decoration: none;
+}
+#pointer h1{
+  font-family: 'Megrim', cursive;
+}
+#pointer img{
+  margin-top: -20px;
+}
+
+
+
+@media (max-height:960px){
+    .logoName{font-size: 72px;}
+    .logoTag{font-size: 36px;}
+    nav ul li a {font-size: 24px;}
+    #pointer{padding-top: 3%;}
+}
+@media (max-height:820px){
+    #landingNav{margin-bottom: 4%;}
+    #pointer{padding-top: 0%; margin-top: -1%; font-size: 12px;}
+}
+@media (max-height:750px){
+    #pointer{display: none;}
+    .logoTag{margin-top:1%;}
+}
+
+@media (max-width:734px){
+    .logoTag{font-size: 36px;}
+    nav ul li a {font-size: 24px;}
+    #pointer{padding-top: 15%;}
+}
+@media (max-width:700px){
+    #pointer{padding-top: 0%; font-size: 12px; margin-top: -6%;}
+}
+@media (max-width:400px){
+    nav ul li a {font-size: 18px;}
+}
+@media (max-width:500px) and (max-height: 800px){
+    #pointer{display: none;}
+}
+
+/*--------------------------------------------------------------------------------------------
+                                         Animation 
+----------------------------------------------------------------------------------------------*/
+#logo{
+  position: relative;
+  animation-name: penFade;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: .5s;
+  opacity: 0;
+}
+#landingNav{
+  position: relative;
+  animation-name: navFade;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.logoName{
+  position: relative;
+  animation-name: nameFade;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+
+@keyframes navFade{
+  0% {opacity: 0; top:25px;}
+  100% {opacity: 1; top:0px;}
+}
+@keyframes nameFade{
+  0% {opacity: 0; bottom:25px;}
+  100% {opacity: 1; bottom:0px;}
+}
+@keyframes penFade{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+#design, #draw, #develop{
+  animation-name: floaty;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+#design{
+  animation-delay: 2s;
+}
+#draw{
+  animation-delay: 2.5s;
+}
+#develop{
+  animation-delay: 3s;
+}
+@keyframes floaty{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+#dot, #dotTwo{
+  animation-name: fadeDot;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+#dot{
+  animation-delay: 1.75s;
+}
+#dotTwo{
+  animation-delay: 2.75s;
+}
+@keyframes fadeDot{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+#pointer{
+  position: relative;
+  animation: pointFade 2s 3.5s forwards, pointBounce 1.5s ease-in-out 5.5s infinite;
+  opacity: 0;
+}
+@keyframes pointFade{
+  from {opacity: 0; bottom:10px;}
+  to {opacity: 1;bottom:0px;}
+}
+@keyframes pointBounce{
+  0% {top:0px;}
+  50% {top:15px;}
+  100% {top:0px;}
+}

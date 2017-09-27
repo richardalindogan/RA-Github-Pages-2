@@ -1,0 +1,48 @@
+@import'fonts/Orator.css';
+@import'fonts/LetterGothicStd.css';
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	/*text-align: center;*/
+	overflow-x: hidden;
+}
+
+section {
+	height: 100vh;
+}
+
+#Contact{
+	height: 75vh;
+}
+/*fonts*/
+.name {
+	font-family: 'Megrim', cursive;
+	font-size: 72px;
+	margin-bottom: 1%;
+}
+
+.titleSet {
+	font-family: 'Megrim', cursive;
+	font-size: 60px;
+	border-style: solid;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	border-width: 1px;
+}
+
+.sectionDescription{
+	font-family: Letter Gothic Std, monospace;
+	font-style: normal;
+	font-size: 18px;
+	}
+
+/*Background*/
+#bg{
+    height: 100vh; 
+    position: absolute;
+}
+
